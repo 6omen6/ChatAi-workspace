@@ -5,12 +5,14 @@ This project is a prototype of a conversational AI chatbot application with real
 ### Option 1: Running backend and frontend separately
 
 1. Start the backend:
+
 ```
 cd backend
 dotnet run
 ```
 
 2. Start the frontend:
+
 ```
 cd web
 npm start
@@ -56,6 +58,7 @@ The project consists of two main parts:
 ## Technologies Used
 
 ### Backend
+
 - ASP.NET Core 6.0
 - Entity Framework Core 6.0
 - MediatR (CQRS pattern implementation)
@@ -64,6 +67,7 @@ The project consists of two main parts:
 - Swagger/OpenAPI
 
 ### Frontend
+
 - Angular 20.3.0
 - Angular Material 20.2.2
 - RxJS
@@ -105,31 +109,39 @@ This will pull both the main repository and the backend and frontend submodules.
 ### Backend Setup
 
 1. Navigate to the backend folder:
+
 ```
 cd backend
 ```
 
 2. Restore NuGet packages:
+
 ```
 dotnet restore
 ```
 
 3. Update the database with the latest migrations:
+
+dotnet tool restore
+
 ```
 dotnet ef database update
 ```
 
 4. Build the project:
+
 ```
 dotnet build
 ```
 
 5. Run the API:
+
 ```
 dotnet run
 ```
 
 The API will be available at:
+
 - HTTPS: https://localhost:7050
 - HTTP: http://localhost:5083
 - Swagger documentation: https://localhost:7050/swagger
@@ -137,16 +149,22 @@ The API will be available at:
 ### Frontend Setup
 
 1. Navigate to the web folder:
+
 ```
 cd web
 ```
 
 2. Install npm packages:
+
+nvm install 20.19.0
+nvm use 20.19.0
+
 ```
 npm install
 ```
 
 3. Start the Angular development server:
+
 ```
 npm start
 ```
@@ -184,12 +202,14 @@ The backend API can be configured through the `appsettings.json` file:
 ### Option 1: Running backend and frontend separately
 
 1. Start the backend:
+
 ```
 cd backend
 dotnet run
 ```
 
 2. Start the frontend:
+
 ```
 cd web
 npm start
