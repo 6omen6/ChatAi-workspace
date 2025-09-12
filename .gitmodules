@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/6omen6/backend
+[submodule "web"]
+	path = web
+	url = https://github.com/6omen6/web
