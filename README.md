@@ -1,6 +1,6 @@
 # ChatAI - Conversational AI Prototype
 
-This project is a prototype of a conversational AI chatbot application with real-time## Running the Application
+This project is a prototype of a conversational AI chatbot application with real-time streaming responses and a feedback system. The application is built using .NET 6 for the backend API and Angular for the frontend.
 
 ### Option 1: Running backend and frontend separately
 
@@ -35,7 +35,7 @@ Alternatively, you can use the Run & Debug functionality in VS Code:
 
 All backend tasks can also be executed from the Terminal menu in VS Code (Terminal → Run Task...).
 
-### Option 3: Building for productionses and a feedback system. The application is built using .NET 6 for the backend API and Angular for the frontend.
+### Option 3: Building for production
 
 ## Project Structure
 
@@ -75,8 +75,26 @@ The project consists of two main parts:
 - Node.js (v16+) and npm
 - SQL Server LocalDB or SQL Server instance
 - Visual Studio 2022, Visual Studio Code, or any preferred IDE
+- Git
 
 ## Setup and Installation
+
+### Cloning the Repository with Submodules
+
+This project uses Git submodules for the backend and frontend components. To clone the repository with all submodules, use:
+
+```
+git clone --recursive https://github.com/6omen6/ChatAi-workspace.git
+```
+
+If you've already cloned the repository without the `--recursive` flag, you can initialize and update the submodules with:
+
+```
+git submodule init
+git submodule update
+```
+
+This will pull both the main repository and the backend and frontend submodules.
 
 ### Database Setup
 
