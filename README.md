@@ -159,6 +159,7 @@ The backend API can be configured through the `appsettings.json` file:
 
 - To use a mock AI service, set `UseMockAI` to `true`
 - To use a real AI service (e.g., OpenAI), update the API key and other settings
+- **Important**: Never commit real API keys to the repository. Use the template file `appsettings.template.json` as a reference and store your actual keys in `appsettings.Development.json` which is excluded from git
 
 ## Running the Application
 
