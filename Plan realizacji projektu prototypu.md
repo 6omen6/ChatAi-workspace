@@ -58,8 +58,8 @@
 
 ## 8. Integracja i testy (2.5h)
 - [done] 8.1. Integracja wszystkich komponentów
-- [] 8.2. Testowanie pełnego flow aplikacji
-- [] 8.3. Identyfikacja i naprawa błędów
+- [done] 8.2. Testowanie pełnego flow aplikacji
+- [done] 8.3. Identyfikacja i naprawa błędów
                - znika ocena po przejsciu miedzy watkami
 - [] 8.4. Optymalizacja wydajności
 
