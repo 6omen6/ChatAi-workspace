@@ -59,6 +59,30 @@
                 "kind": "build",
                 "isDefault": false
             }
+        },
+        {
+            "label": "ng-serve",
+            "type": "shell",
+            "command": "ng",
+            "args": [
+                "serve",
+                "--configuration=development",
+                "--port=4200",
+                "--open"
+            ],
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "typescript",
+                "pattern": "$tsc",
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".*Compiling.*(Angular|TypeScript).*",
+                    "endsPattern": ".*Compiled successfully.*"
+                }
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/web"
+            }
         }
     ]
 }
